@@ -60,38 +60,40 @@ class DailyMarketOverviewDataCommand extends Command
 📊 *Market Overview* 📊
 ━━━━━━━━━━━━━━━━━━━
 🚀 *Top Cryptos:*
-*BTC* : \${$btcPrice}
-*ETH* : \${$ethPrice}
-*SOL* : \${$solPrice}
-*BNB* : \${$bnbPrice}
+BTC : \${$btcPrice}
+ETH : \${$ethPrice}
+SOL : \${$solPrice}
+BNB : \${$bnbPrice}
 
 📈 *Market Cap* 💰
 ━━━━━━━━━━━━━━━━━━━
-🌐 *Total* : {$totalMarketCap}
-🔗 *DeFi* : {$defiMarketCap} ({$defiChange}%)
-💵 *Stablecoins* : {$stablecoinMarketCap} ({$stablecoinChange}%)
-📊 *24hr Volume* : {$totalVolume24h}
-💵 *Stablecoins Volume24h * : $stablecoinVolume24h
-📉 *Derivatives* : {$derivativesVolume24h} ({$derivativesChange}%)
+🌐 Total : {$totalMarketCap}
+🔗 DeFi : {$defiMarketCap} ({$defiChange}%)
+💵 Stablecoins : {$stablecoinMarketCap} ({$stablecoinChange}%)
+📊 24hr Volume : {$totalVolume24h}
+💵 Stablecoins Volume24h  : $stablecoinVolume24h
+📉 Derivatives : {$derivativesVolume24h} ({$derivativesChange}%)
 
 📊 *CMC Market Stats* 📊
 ━━━━━━━━━━━━━━━━━━━
-🪙 *Crypto: Active/Total* : {$activeCryptos} / {$totalCryptos}
-🔄 *Market Pairs* : {$activePairs}
-🏦 *Exchanges: Active/Total* : {$activeExchanges} / {$totalExchanges}
+🪙 Crypto: Active/Total : {$activeCryptos} / {$totalCryptos}
+🔄 Market Pairs : {$activePairs}
+🏦 Exchanges: Active/Total : {$activeExchanges} / {$totalExchanges}
 
 ⚡️ *Sentiment & Activity* 💡
 ━━━━━━━━━━━━━━━━━━━
-🧭 *Fear & Greed Index* : {$fearGreed}
-📈 *Open Interest* : {$btcInterests}
+🧭 Fear & Greed Index : {$fearGreed}
+📈 Open Interest : {$btcInterests}
 
 🔍 *Dominance* 📊
 ━━━━━━━━━━━━━━━━━━━
-🟧 *BTC* : {$btcDominance}% (24h: {$btcDominanceChange}%)
-🟦 *ETH* : {$ethDominance}% (24h: {$ethDominanceChange}%)
+🟧 BTC : {$btcDominance}% (24h: {$btcDominanceChange}%)
+🟦 ETH : {$ethDominance}% (24h: {$ethDominanceChange}%)
 
 📅 *Last Update:* {$latestUpdate}
 ━━━━━━━━━━━━━━━━━━━
+
+@WCryptonian
 EOD;
 
         $telegram->sendMessage([
